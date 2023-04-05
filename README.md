@@ -8,17 +8,21 @@ Use localStorage with JSON parse and stringify automatically
 ## Utilization
 
  ```js
- import { jsonSetItem, jsonGetItem, jsonRemoveItem, jsonClear, isStorageAvailable } from 'json-storage';
- 
- jsonSetItem('test', {test: 'value'});
- 
- const item = jsonGetItem('test'); // returns {test: 'value'}
- 
- const storageLength = jsonLength() // returns 1
- 
- jsonRemoveItem('test'); // remove 'test' key
- 
- jsonClear() // clear all keys
- 
- isStorageAvailable() // returns true if localStorage available and quota not exceeded, else false
+ // @ts-check
+import { jsonSetItem, jsonGetItem, jsonRemoveItem, jsonClear, jsonLength, isStorageAvailable } from 'json-storage';
+
+const isAvailable = isStorageAvailable() // returns true if localStorage available and quota not exceeded, else false
+console.log({ isAvailable });
+
+jsonSetItem('test', { test: 'value' });
+
+const item = jsonGetItem('test'); // returns {test: 'value'}
+console.log({ item });
+
+const storageLength = jsonLength() // returns 1
+console.log({ storageLength });
+
+jsonRemoveItem('test'); // remove 'test' key
+
+jsonClear() // clear all keys
  ```
