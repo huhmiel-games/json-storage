@@ -1,0 +1,17 @@
+{
+  "name": "json-storage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Philippe Pereira",
+  "license": "MIT",
+  "keywords": ["localStorage", "json"],
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
