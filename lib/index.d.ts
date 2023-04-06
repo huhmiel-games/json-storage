@@ -1,4 +1,4 @@
-type TValue = object | string | number | bigint | boolean;
+declare type TValue = object | string | number | bigint | boolean;
 /**
  * localStorage setItem with JSON stringify
  */
@@ -6,7 +6,7 @@ export declare function jsonSetItem(key: string, value: TValue): void;
 /**
  * localStorage getItem with JSON parse
  */
-export declare function jsonGetItem(key: string): TValue | null;
+export declare function jsonGetItem<T>(key: string): T | null;
 /**
  * localStorage removeItem
  */

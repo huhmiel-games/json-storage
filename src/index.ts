@@ -18,7 +18,7 @@ export function jsonSetItem(key: string, value: TValue): void
 /**
  * localStorage getItem with JSON parse
  */
-export function jsonGetItem(key: string): TValue | null
+export function jsonGetItem<T>(key: string): T | null
 {
     try
     {
