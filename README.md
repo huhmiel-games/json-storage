@@ -9,7 +9,14 @@ Use localStorage with JSON parse and stringify automatically
 
  ```js
  // @ts-check
-import { jsonSetItem, jsonGetItem, jsonRemoveItem, jsonClear, jsonLength, isStorageAvailable } from 'json-storage';
+import { 
+    jsonSetItem, 
+    jsonGetItem, 
+    jsonRemoveItem, 
+    jsonClear, 
+    jsonLength, 
+    isStorageAvailable 
+} from 'json-storage';
 
 const isAvailable = isStorageAvailable() // returns true if localStorage available and quota not exceeded, else false
 console.log({ isAvailable });
