@@ -18,7 +18,8 @@ import {
     isStorageAvailable 
 } from 'json-storage';
 
-const isAvailable = isStorageAvailable() // returns true if localStorage available and quota not exceeded, else false
+const isAvailable = isStorageAvailable() // returns true if localStorage available 
+// and quota not exceeded, else false
 console.log({ isAvailable });
 
 jsonSetItem('test', { test: 'value' });
